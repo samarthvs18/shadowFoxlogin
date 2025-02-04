@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088857167486",
+    "project_id": "shadowfox-2b1ee",
+    "storage_bucket": "shadowfox-2b1ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088857167486:android:24e64c790c1abd97d92a2f",
+        "android_client_info": {
+          "package_name": "com.example.shadowfoxlogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSECMU1rqZr5RCKP0tQ_hPiVlmivJxWiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

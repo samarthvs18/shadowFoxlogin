@@ -29,26 +29,21 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        // Find views
         usernameField = findViewById(R.id.username);
         passwordField = findViewById(R.id.password);
         loginBtn = findViewById(R.id.loginbtn);
         registerBtn = findViewById(R.id.registerbtn); // Register button
 
-        // Set onClick listeners for the buttons
         loginBtn.setOnClickListener(view -> loginUser());
         registerBtn.setOnClickListener(view -> registerUser()); // Register user on click
     }
 
-    // Login user
     private void loginUser() {
         String email = usernameField.getText().toString().trim();
         String password = passwordField.getText().toString().trim();
 
-        // Validate input
         if (TextUtils.isEmpty(email)) {
             usernameField.setError("Enter your email");
             return;
@@ -58,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Firebase login
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
@@ -74,12 +68,10 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    // Register new user
     private void registerUser() {
         String email = usernameField.getText().toString().trim();
         String password = passwordField.getText().toString().trim();
 
-        // Validate input
         if (TextUtils.isEmpty(email)) {
             usernameField.setError("Enter your email");
             return;
@@ -89,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Firebase register
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {

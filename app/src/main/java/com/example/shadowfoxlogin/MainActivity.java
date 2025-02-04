@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         usernameField = findViewById(R.id.username);
         passwordField = findViewById(R.id.password);
         loginBtn = findViewById(R.id.loginbtn);
-        registerBtn = findViewById(R.id.registerbtn); // Register button
+        registerBtn = findViewById(R.id.registerbtn);
 
         loginBtn.setOnClickListener(view -> loginUser());
-        registerBtn.setOnClickListener(view -> registerUser()); // Register user on click
+        registerBtn.setOnClickListener(view -> registerUser());
     }
 
     private void loginUser() {

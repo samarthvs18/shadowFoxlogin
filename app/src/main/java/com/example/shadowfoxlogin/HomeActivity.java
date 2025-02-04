@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private Button logoutBtn;
+    private Button logoutBtn, calculatorBtn, weatherBtn;
     private FirebaseAuth mAuth;
 
     @Override
@@ -32,6 +32,8 @@ public class HomeActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         logoutBtn = findViewById(R.id.logoutbtn);
+        calculatorBtn = findViewById(R.id.calculatorBtn);
+        weatherBtn = findViewById(R.id.weatherBtn);
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,20 @@ public class HomeActivity extends AppCompatActivity {
                 mAuth.signOut();
                 startActivity(new Intent(HomeActivity.this, MainActivity.class));
                 finish();
+            }
+        });
+
+        calculatorBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, CalculatorActivity.class));
+            }
+        });
+
+        weatherBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Future implementation for weather forecast
             }
         });
     }

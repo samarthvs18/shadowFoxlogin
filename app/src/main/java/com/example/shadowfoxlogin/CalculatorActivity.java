@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.content.Intent;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,6 +47,7 @@ public class CalculatorActivity extends AppCompatActivity {
         Button btnSquare = findViewById(R.id.btnSquare);
         Button btnSqrt = findViewById(R.id.btnSqrt);
         Button btnReset = findViewById(R.id.btnReset);
+        Button  btnBack = findViewById(R.id.btnBack);
 
         btn7.setOnClickListener(v -> appendNumber("7"));
         btn8.setOnClickListener(v -> appendNumber("8"));
@@ -70,6 +72,15 @@ public class CalculatorActivity extends AppCompatActivity {
 
         btnEquals.setOnClickListener(v -> calculateResult());
         btnReset.setOnClickListener(v -> resetCalculator());
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CalculatorActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void appendNumber(String number) {

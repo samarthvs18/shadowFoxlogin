@@ -154,20 +154,34 @@
             android:text="√" />
     </GridLayout>
 
+
     <Button
         android:id="@+id/btnReset"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_width="182dp"
+        android:layout_height="80dp"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#ff0000"
         android:text="Reset"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.687"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

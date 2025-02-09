@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText usernameField, passwordField;
     private Button loginBtn, registerBtn;
     private FirebaseAuth mAuth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-
     private void registerUser() {
         String email = usernameField.getText().toString().trim();
         String password = passwordField.getText().toString().trim();

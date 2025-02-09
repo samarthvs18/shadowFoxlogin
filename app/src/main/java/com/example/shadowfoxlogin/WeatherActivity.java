@@ -143,7 +143,7 @@ public class WeatherActivity extends AppCompatActivity {
         savedLocations.addAll(locations);
 
         if (locationAdapter != null) {
-            locationAdapter.notifyDataSetChanged(); // Ensure adapter is initialized before calling this
+            locationAdapter.notifyDataSetChanged();
         }
     }
 }

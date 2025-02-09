@@ -43,7 +43,6 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Get Weather Button -->
     <Button
         android:id="@+id/btnGetWeather"
         android:layout_width="143dp"
@@ -76,7 +75,6 @@
         app:layout_constraintVertical_bias="0.0" />
 
 
-    <!-- Save Location Button -->
     <Button
         android:id="@+id/btnSaveLocation"
         android:layout_width="wrap_content"
@@ -112,6 +110,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnViewSavedLocations"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

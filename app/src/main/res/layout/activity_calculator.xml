@@ -9,9 +9,7 @@
     android:alpha="0.9"
     tools:context=".CalculatorActivity">
 
-    <!-- Display Field -->
 
-    <!-- Number and Operation Buttons -->
     <EditText
         android:id="@+id/display"
         android:layout_width="0dp"
@@ -46,112 +44,133 @@
 
         <Button
             android:id="@+id/btn7"
-            android:backgroundTint="#FF0000"
-            android:text="7" />
+            android:backgroundTint="#800000"
+            android:text="7"
+            android:textSize="20sp"
+            />
         />
 
         <Button
             android:id="@+id/btn8"
-            android:backgroundTint="#FF0000"
-            android:text="8" />
+            android:backgroundTint="#800000"
+            android:text="8"
+            android:textSize="20sp"/>
         />
 
         <Button
             android:id="@+id/btn9"
-            android:backgroundTint="#FF0000"
-            android:text="9" />
+            android:backgroundTint="#800000"
+            android:text="9"
+            android:textSize="20sp"/>
         />
 
         <Button
             android:id="@+id/btnDivide"
             android:backgroundTint="@color/black"
-            android:text="÷" />
+            android:text="÷"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btn4"
-            android:backgroundTint="#FF0000"
-            android:text="4" />
+            android:backgroundTint="#800000"
+            android:text="4"
+            android:textSize="20sp" />
         />
 
         <Button
             android:id="@+id/btn5"
-            android:backgroundTint="#FF0000"
-            android:text="5" />
+            android:backgroundTint="#800000"
+            android:text="5"
+            android:textSize="20sp"/>
         />
 
         <Button
             android:id="@+id/btn6"
-            android:backgroundTint="#FF0000"
-            android:text="6" />
+            android:backgroundTint="#800000"
+            android:text="6"
+            android:textSize="20sp"/>
         />
 
         <Button
             android:id="@+id/btnMultiply"
             android:backgroundTint="@color/black"
-            android:text="×" />
+            android:text="×"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btn1"
-            android:backgroundTint="#FF0000"
-            android:text="1" />
+            android:backgroundTint="#800000"
+            android:text="1"
+            android:textSize="20sp"/>
         />
 
         <Button
             android:id="@+id/btn2"
-            android:backgroundTint="#FF0000"
-            android:text="2" />
+            android:backgroundTint="#800000"
+            android:text="2"
+            android:textSize="20sp"/>
         />
 
         <Button
             android:id="@+id/btn3"
-            android:backgroundTint="#FF0000"
-            android:text="3" />
+            android:backgroundTint="#800000"
+            android:text="3"
+            android:textSize="20sp" />
         />
 
         <Button
             android:id="@+id/btnMinus"
             android:backgroundTint="@color/black"
-            android:text="−" />
+            android:text="−"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btn0"
-            android:backgroundTint="#FF0000"
-            android:text="0" />
+            android:backgroundTint="#800000"
+            android:text="0"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btnDot"
             android:backgroundTint="@color/black"
-            android:text="." />
+            android:text="."
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btnEquals"
             android:backgroundTint="@color/black"
-            android:text="=" />
+            android:text="="
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btnPlus"
             android:backgroundTint="@color/black"
-            android:text="+" />
+            android:text="+"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btnCube"
             android:backgroundTint="@color/black"
-            android:text="x³" />
+            android:text="x³"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btnPercent"
             android:backgroundTint="@color/black"
-            android:text="%" />
+            android:text="%"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/btnSquare"
             android:backgroundTint="@color/black"
-            android:text="x²" />
+            android:text="x²"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/btnSqrt"
             android:backgroundTint="@color/black"
-            android:text="√" />
+            android:text="√"
+            android:textSize="20sp"/>
     </GridLayout>
 
 
@@ -160,7 +179,7 @@
         android:layout_width="182dp"
         android:layout_height="80dp"
         android:layout_margin="16dp"
-        android:backgroundTint="#ff0000"
+        android:backgroundTint="#ff0011"
         android:text="Reset"
         android:textColor="@android:color/white"
         android:textSize="20sp"

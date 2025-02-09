@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="@drawable/gradeintbg"
     android:layout_height="match_parent"
+    android:background="@drawable/gradeintbg"
     tools:context=".HomeActivity">
 
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
         android:text="Welcome to ShadowFox!"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -25,12 +24,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.039" />
 
-
     <Button
         android:id="@+id/calculatorBtn"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:backgroundTint="#f895"
+        android:layout_width="261dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#f2422456"
         android:gravity="center"
         android:minWidth="100dp"
         android:minHeight="100dp"
@@ -39,16 +37,15 @@
         android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcomeText"
-        app:layout_constraintVertical_bias="0.298" />
+        app:layout_constraintVertical_bias="0.482" />
 
     <Button
         android:id="@+id/weatherBtn"
-        android:layout_width="200dp"
-        android:layout_height="140dp"
-        android:backgroundTint="#f63"
+        android:layout_width="259dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#f263"
         android:elevation="8dp"
         android:gravity="center"
         android:minWidth="100dp"
@@ -58,10 +55,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintVertical_bias="0.229" />
 
     <Button
         android:id="@+id/logoutbtn"
@@ -70,7 +67,6 @@
         android:backgroundTint="#Ff0000"
         android:text="Logout"
         android:textColor="@color/white"
-
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

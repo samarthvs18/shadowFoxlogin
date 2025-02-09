@@ -54,7 +54,8 @@ public class HomeActivity extends AppCompatActivity {
         weatherBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Future implementation for weather forecast
+                Intent intent = new Intent(HomeActivity.this, WeatherActivity.class);
+                startActivity(intent);
             }
         });
     }
